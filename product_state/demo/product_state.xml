@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<odoo>
+
+    <record
+        id="product_state_new" model="product.state">
+        <field name="name">New</field>
+        <field name="code">new</field>
+    </record>
+
+    <record
+        id="product_state_in_progress" model="product.state">
+        <field name="name">In progress</field>
+        <field name="code">in_progress</field>
+    </record>
+
+    <record
+        id="product_state_done" model="product.state">
+        <field name="name">Done </field>
+        <field name="code">done</field>
+    </record>
+
+</odoo>

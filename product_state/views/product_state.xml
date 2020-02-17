@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    
+    <record id="product_state_action" model="ir.actions.act_window">
+        <field name="name">States</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">product.state</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem 
+        id="menu_product_state"
+        parent="sale.prod_config_main"
+        sequence="10"
+        name="States"
+        action="product_state_action"/>
+
+</odoo>

@@ -7,14 +7,9 @@ from odoo import fields, models
 class ProductTemplate(models.Model):
     _inherit = "product.template"
 
-    state = fields.Selection(
-        selection=[
-            ("draft", "In Development"),
-            ("sellable", "Normal"),
-            ("end", "End of Lifecycle"),
-            ("obsolete", "Obsolete"),
-        ],
-        string="Status",
-        default="sellable",
+    product_state_id = fields.Many2one(
+        comodel_name="product.state")
+    state = fields.Char(
+        related="product_state_id.code",
         index=True,
-    )
+        store=True)

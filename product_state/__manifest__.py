@@ -7,12 +7,19 @@
     "author": "ACSONE SA/NV, Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/product-attribute",
     "category": "Product",
-    "version": "13.0.1.0.0",
+    "version": "13.0.1.0.1",
     "license": "AGPL-3",
     "depends": [
         "product",
         "sale",
     ],
-    "data": ["views/product_views.xml"],
+    "demo":[
+        "demo/product_state.xml",
+    ],
+    "data": [
+        "security/ir.model.access.csv",
+        "views/product_views.xml",
+        "views/product_state.xml",
+    ],
     "application": True,
 }

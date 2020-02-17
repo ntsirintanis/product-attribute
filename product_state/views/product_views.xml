@@ -8,7 +8,9 @@
         <field name="arch" type="xml">
             <sheet position="before">
                 <header>
-                    <field name="state" widget="statusbar" clickable="True"/>
+                    <field name="product_state_id"
+                        widget="statusbar"
+                        clickable="True"/>
                 </header>
             </sheet>
         </field>
@@ -21,7 +23,7 @@
         <field name="priority">50</field>
         <field name="arch" type="xml">
             <field name="type" position="after">
-                <field name="state"/>
+                <field name="product_state_id"/>
             </field>
         </field>
     </record>
