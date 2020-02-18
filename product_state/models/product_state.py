@@ -5,6 +5,7 @@ from odoo import fields, models
 
 class ProductState(models.Model):
     _name = "product.state"
+    _description = "Product State"
     
     name = fields.Char(
         required=True,
