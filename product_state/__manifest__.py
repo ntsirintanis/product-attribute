@@ -13,9 +13,6 @@
         "product",
         "sale",
     ],
-    "demo":[
-        "demo/product_state.xml",
-    ],
     "data": [
         "security/ir.model.access.csv",
         "views/product_views.xml",
