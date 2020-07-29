@@ -10,7 +10,7 @@
                 <header>
                     <field name="product_state_id"
                         widget="statusbar"
-                        clickable="True"/>
+                        clickable="true"/>
                 </header>
             </sheet>
         </field>
